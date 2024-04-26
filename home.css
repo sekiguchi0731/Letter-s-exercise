@@ -1,0 +1,64 @@
+.header {
+  display: flex;
+  width: 1400px;
+  height: 80px;
+  flex-shrink: 0;
+  background-color: #f0f0f0;
+}
+
+.logo {
+  width: 100px;
+  margin-top: 27px;
+  margin-left: 100px;
+  flex-shrink: 0;
+}
+
+/* メディアクエリという */
+@media screen and (max-width: 1400px) {
+  .logo {
+    margin-left: 16px; /* 画面幅が1400px以下の場合の値 */
+  }
+}
+
+#nav {
+  margin-top: 31px;
+  margin-left: 60px;
+}
+/* nav, li： だと、navとliで2重に設定される*/
+#nav ul li {
+  height: 21px;
+  margin-right: 30px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: var(--000000-black, #000);
+  font-family: "Hiragino Kaku Gothic ProN";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+#box {
+  width: 200px;
+  height: 80px;
+  background-color: #000;
+  /* margin: 0 0 0 0;        */
+  right: 0;
+  display: flex;        /* 要素内のコンテンツを中央揃えするためにflexレイアウトを使用 */
+  justify-content: center; /* 水平方向の中央揃え */
+  align-items: center;     /* 垂直方向の中央揃え */
+  position: fixed;         /* 画面上に表示され続ける */
+}
+#box p {
+  width: 72px;
+  height: 18px;
+  flex-shrink: 0;
+  color: var(--ffffff-white, #FFF);
+  font-family: "Hiragino Kaku Gothic ProN";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  color: white;
+}
