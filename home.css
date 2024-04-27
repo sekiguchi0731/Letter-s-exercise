@@ -2,6 +2,7 @@
   width: 100%;
   height: 100%;
   overflow-x: hidden;
+  background-color: #f0f0f0;
 }
 
 .header {
@@ -9,7 +10,6 @@
   max-width: 1400px;
   height: 80px;
   flex-shrink: 0;
-  background-color: #f0f0f0;
 }
 
 .logo {
@@ -86,16 +86,16 @@
   font-weight: 300;
   line-height: 36px; /* 100% */
   letter-spacing: 10.8px;
+  margin-bottom: 10px;
 }
 
-#section-title p{
+#text {
   color: var(--000000-black, #000);
   font-family: "Hiragino Kaku Gothic ProN";
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
-  margin-top: 10px;
 }
 
 #section-title hr {
@@ -105,4 +105,34 @@
   stroke-width: 1px;
   stroke: var(--000000-black, #000);
   margin-top: 36px;
+}
+
+.news-item {
+  width: 254px;
+  height: 61px;
+  flex-shrink: 0;
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.news-item .frame {
+  width: 50px;
+  height: 20px;
+  background-color: #000;
+  margin-left: 10px;
+  color: var(--ffffff-white, #FFF);
+  font-family: "Hiragino Kaku Gothic ProN";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px; /* 166.667% */
+  display: flex; /* 子要素を水平方向に並べる */
+  justify-content: center; /* 水平方向に中央揃え */
+  align-items: center; /* 垂直方向に中央揃え */
+}
+
+.news-item #text p {
+  margin-top: 16px;
 }
