@@ -71,3 +71,32 @@
   margin-top: 120px;
   margin-left: 200px;
 }
+
+#section-title h2{
+  color: var(--000000-black, #000);
+  font-family: "Hiragino Kaku Gothic ProN";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 36px; /* 100% */
+  letter-spacing: 10.8px;
+}
+
+#section-title p{
+  color: var(--000000-black, #000);
+  font-family: "Hiragino Kaku Gothic ProN";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-top: 10px;
+}
+
+#section-title hr {
+  width: 40px;
+  height: 0px;
+  flex-shrink: 0;
+  stroke-width: 1px;
+  stroke: var(--000000-black, #000);
+  margin-top: 36px;
+}
