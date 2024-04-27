@@ -1,6 +1,6 @@
 .header {
   display: flex;
-  width: 1400px;
+  max-width: 1400px;
   height: 80px;
   flex-shrink: 0;
   background-color: #f0f0f0;
@@ -40,15 +40,16 @@
 }
 
 #box {
+  position: absolute;         /* 縦スクロールに対応 */
   width: 200px;
   height: 80px;
   background-color: #000;
   /* margin: 0 0 0 0;        */
   right: 0;
+  top: 0;
   display: flex;        /* 要素内のコンテンツを中央揃えするためにflexレイアウトを使用 */
   justify-content: center; /* 水平方向の中央揃え */
   align-items: center;     /* 垂直方向の中央揃え */
-  position: fixed;         /* 画面上に表示され続ける */
 }
 #box p {
   width: 72px;
@@ -61,4 +62,12 @@
   font-weight: 300;
   line-height: normal;
   color: white;
+}
+
+.NEWS {
+  width: 940px;
+  height: 234px;
+  flex-shrink: 0;
+  margin-top: 120px;
+  margin-left: 200px;
 }
