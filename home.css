@@ -115,6 +115,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  margin-right: 100px; /* 本当か？ */
 }
 
 .news-item .frame {
@@ -135,4 +136,16 @@
 
 .news-item #text p {
   margin-top: 16px;
+}
+
+.content {
+  display: flex; 
+}
+
+.frame2 hr{
+  width: 0px;
+  height: 81px;
+  flex-shrink: 0;
+  margin-top: 50px;
+  margin-right: 20px;
 }
