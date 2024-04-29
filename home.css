@@ -70,6 +70,24 @@
   color: white;
 }
 
+.maskgroup {
+  /* 元画像のサイズ指定 */
+  width: 100%;
+  height: 650px;
+
+  /* （背景画像の場合） 元画像の指定 */
+  background-image: url(./img/mainvisual.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  /* マスク画像の指定 */
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+  /* マスクした範囲外の画像を非表示にする */
+  overflow: hidden;
+}
+
 .NEWS {
   width: 940px;
   height: 234px;
