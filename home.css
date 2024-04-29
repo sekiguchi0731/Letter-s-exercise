@@ -92,11 +92,11 @@
 }
 
 .news {
-  width: 940px;
+  width: 1000px;
   height: 234px;
   flex-shrink: 0;
   margin-top: 120px;
-  margin-left: max(16px, calc((100vw - 940px) / 2));
+  margin-left: max(16px, calc((100vw - 1000px) / 2));
 }
 
 #section-title h2{
@@ -136,7 +136,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-right: 100px; /* 本当か？ */
+  /* margin-right: 100px; 本当か？ */
 }
 
 .news-item .frame {
@@ -161,6 +161,7 @@
 
 .content {
   display: flex; 
+  column-gap: 40px;
 }
 
 .frame2 hr{
