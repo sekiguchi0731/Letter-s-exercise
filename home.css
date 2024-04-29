@@ -76,7 +76,7 @@
 .maskgroup {
   /* 元画像のサイズ指定 */
   width: 100%;
-  height: 650px;
+  height: 730px;
 
   /* （背景画像の場合） 元画像の指定 */
   background-image: url(./img/mainvisual.jpg);
@@ -91,7 +91,7 @@
   overflow: hidden;
 }
 
-.news {
+#news {
   width: 1000px;
   height: 234px;
   flex-shrink: 0;
@@ -99,7 +99,7 @@
   margin-left: max(16px, calc((100vw - 1000px) / 2));
 }
 
-#section-title h2{
+.section-title h2{
   color: var(--000000-black, #000);
   font-family: "Hiragino Kaku Gothic ProN";
   font-size: 36px;
@@ -110,7 +110,7 @@
   margin-bottom: 10px;
 }
 
-#text {
+.text {
   color: var(--000000-black, #000);
   font-family: "Hiragino Kaku Gothic ProN";
   font-size: 14px;
@@ -119,13 +119,9 @@
   line-height: normal;
 }
 
-#section-title hr {
-  width: 40px;
-  height: 0px;
-  flex-shrink: 0;
-  stroke-width: 1px;
-  stroke: var(--000000-black, #000);
-  margin-top: 36px;
+.section-title .text {
+  line-height: 14px;
+  margin-bottom: 36px;
 }
 
 .news-item {
@@ -154,8 +150,10 @@
   justify-content: center; /* 水平方向に中央揃え */
   align-items: center; /* 垂直方向に中央揃え */
 }
-
-.news-item #text p {
+.news-item .text {
+  line-height: 14px;
+}
+.news-item .text p {
   margin-top: 16px;
 }
 
