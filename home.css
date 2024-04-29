@@ -97,6 +97,7 @@
   flex-shrink: 0;
   margin-top: 120px;
   margin-left: max(16px, calc((100vw - 1000px) / 2));
+  margin-bottom: 120px;
 }
 
 .section-title h2{
@@ -178,4 +179,23 @@
   flex-shrink: 0;
   margin-top: 50px;
   border: 0.5px solid;
+}
+
+#about .maskgroup {
+  /* 元画像のサイズ指定 */
+  width: 55vw;
+  max-width: 770px;
+  height: 400px;
+
+  /* （背景画像の場合） 元画像の指定 */
+  background-image: url(./img/about.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  /* マスク画像の指定 */
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+  /* マスクした範囲外の画像を非表示にする */
+  overflow: hidden;
 }
