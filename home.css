@@ -14,8 +14,10 @@
 
 .logo {
   width: 100px;
-  margin-top: 27px;
+  display: flex;
   margin-left: 100px;
+  /* 上下中央揃え */
+  align-items: center;
   flex-shrink: 0;
 }
 
@@ -27,7 +29,8 @@
 }
 
 #nav {
-  margin-top: 31px;
+  display: flex;
+  align-items: center;
   margin-left: 60px;
 }
 /* nav, li： だと、navとliで2重に設定される*/
