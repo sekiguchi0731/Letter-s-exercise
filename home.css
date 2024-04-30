@@ -184,7 +184,7 @@
 #about {
   height: 1160px;
   display: flex;
-  align-items: center;
+  align-items: start;
 }
 
 #about .maskgroup {
@@ -209,5 +209,10 @@
   margin-bottom: 120px;
 }
 #about .section-title {
+  margin-top: 180px;
   margin-left: 5%;
+}
+#about #t2 {
+  margin-top: 50px;
+  line-height: 220%;
 }
