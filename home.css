@@ -218,3 +218,39 @@
   margin-bottom: 0;
   line-height: 220%;
 }
+
+#business {
+  height: auto;
+}
+#business ul {
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  gap: 50px 64px;
+}
+#business li {
+  list-style: none;
+}
+#business img {
+  width: 386px;
+  height: 232px;
+  flex-shrink: 0;
+}
+#business .business-item {
+  height: 269px; /* img要素と同じ高さに設定 */
+}
+.business-item:nth-child(1) {
+  margin-top: 100px; /* 下げたい高さを指定 */
+}
+.business-item:nth-child(4) {
+  margin-top: -100px; /* 下げたい高さを指定 */
+}
+#business .business-item .text {
+  display: flex;
+  font-weight: 600;
+  margin-bottom: 10px;
+  align-items: center;
+  column-gap: 10px;
+}
