@@ -91,7 +91,7 @@
   overflow: hidden;
 }
 
-#news, #business {
+#news, #business, #company {
   width: 1000px;
   height: 234px;
   flex-shrink: 0;
@@ -253,4 +253,35 @@
   margin-bottom: 10px;
   align-items: center;
   column-gap: 10px;
+}
+
+#company {
+  height: auto;
+  margin-left: max(0px, calc((100vw - 1000px) / 2));
+}
+#company .frame3 {
+  /* min関数は%は効かない */
+  width: min(567px, 55vw);
+  height: 616px;
+  background-color: #FFF;
+  padding: 100px 62px 100px min(82px, 8vw);
+}
+#company table {
+  margin-top: 50px;
+  /* border-spacing: 10px; */
+}
+td {
+  text-align: left;
+  vertical-align: top;
+  padding-bottom: 10px;
+}
+td:first-child {
+  width: 85px;
+}
+td:last-child {
+  width: 300px;
+}
+td li {
+  list-style: none;
+  padding-bottom: 10px;
 }
