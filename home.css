@@ -182,9 +182,10 @@
 }
 
 #about {
-  height: 1160px;
+  /* height: 1160px; */
   display: flex;
   align-items: start;
+  margin-bottom: 120px;
 }
 
 #about .maskgroup {
@@ -214,5 +215,6 @@
 }
 #about #t2 {
   margin-top: 50px;
+  margin-bottom: 0;
   line-height: 220%;
 }
