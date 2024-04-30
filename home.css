@@ -188,7 +188,7 @@
   margin-bottom: 120px;
 }
 
-#about .maskgroup {
+#about .maskgroup, #company .maskgroup {
   /* 元画像のサイズ指定 */
   width: 70vw;
   max-width: 770px;
@@ -259,6 +259,8 @@
 
 #company {
   height: auto;
+  display: flex;
+  align-items: center;
   margin-left: max(0px, calc((100vw - 1000px) / 2));
 }
 #company .frame3 {
@@ -267,6 +269,7 @@
   height: 616px;
   background-color: #FFF;
   padding: 100px 62px 100px min(82px, 8vw);
+  z-index: 1;
 }
 #company table {
   margin-top: 50px;
@@ -286,4 +289,13 @@ td:last-child {
 td li {
   list-style: none;
   padding-bottom: 10px;
+}
+#company .maskgroup {
+  width: min(547px, 55vw);
+  height: 400px;
+  background-image: url(./img/company.jpg);
+  background-position: center center;
+  z-index: 2;
+  margin-left: -82px;
+  margin-bottom: 0;
 }
