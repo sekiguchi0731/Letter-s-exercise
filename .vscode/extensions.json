@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    // Linter
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    // Github
+    "github.vscode-pull-request-github",
+    "eamodio.gitlens",
+    // Editor
+    "oderwat.indent-rainbow",
+    "ecmel.vscode-html-css",
+    "streetsidesoftware.code-spell-checker"
+  ]
+}
