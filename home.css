@@ -91,7 +91,7 @@
   overflow: hidden;
 }
 
-#news {
+#news, #business {
   width: 1000px;
   height: 234px;
   flex-shrink: 0;
