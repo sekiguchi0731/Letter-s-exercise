@@ -181,6 +181,12 @@
   border: 0.5px solid;
 }
 
+#about {
+  height: 1160px;
+  display: flex;
+  align-items: center;
+}
+
 #about .maskgroup {
   /* 元画像のサイズ指定 */
   width: 55vw;
@@ -198,4 +204,10 @@
 
   /* マスクした範囲外の画像を非表示にする */
   overflow: hidden;
+
+  /* 余白 */
+  margin-bottom: 120px;
+}
+#about .section-title {
+  margin-left: 5%;
 }
