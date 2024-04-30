@@ -190,7 +190,7 @@
 
 #about .maskgroup {
   /* 元画像のサイズ指定 */
-  width: 55vw;
+  width: 70vw;
   max-width: 770px;
   height: 400px;
 
@@ -210,8 +210,10 @@
   margin-bottom: 120px;
 }
 #about .section-title {
+  width: 45vw;
   margin-top: 180px;
   margin-left: 5%;
+  margin-right: 5%;
 }
 #about #t2 {
   margin-top: 50px;
