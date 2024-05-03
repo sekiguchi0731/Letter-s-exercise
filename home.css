@@ -4,56 +4,66 @@
   overflow-x: hidden;
   background-color: #f0f0f0;
 }
-
 .header {
+  position: relative;
   display: flex;
-  max-width: 1400px;
+  width: 100%;
   height: 80px;
+  /* gap: 0px 590px; */
+  justify-content: space-between;
   flex-shrink: 0;
 }
-
 .logo {
   width: 100px;
   display: flex;
-  margin-left: 100px;
   /* 上下中央揃え */
   align-items: center;
   flex-shrink: 0;
 }
-
-/* メディアクエリという */
-@media screen and (max-width: 1400px) {
-  .logo {
-    margin-left: 16px; /* 画面幅が1400px以下の場合の値 */
-  }
-}
-
 #nav {
   display: flex;
   align-items: center;
-  margin-left: 60px;
 }
 /* nav, li： だと、navとliで2重に設定される*/
-#nav ul li {
+#nav ul {
   height: 21px;
+  width: auto;
+  box-sizing: border-box;
+}
+#nav ul li{
   margin-right: 30px;
   display: inline-flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   color: var(--000000-black, #000);
   font-family: "Hiragino Kaku Gothic ProN";
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
-  line-height: normal;
+  line-height: 21px;
 }
-
+#nav ul li:last-child {
+  margin-right: 0px;
+}
+#nav a {
+  color: var(--000000-black, #000);
+  text-decoration: none;
+}
+.inner-header {
+  width: calc(100vw - 200px);
+  max-width: 1032px;
+  /* width: calc(100vw - 200px); */
+  display: flex;
+  margin: 0 calc((100vw - 1232px) / 2);
+  box-sizing: border-box;
+  gap: 0px 60px;
+  padding: 0px 16px;
+}
 #box {
   position: absolute;         /* 縦スクロールに対応 */
   width: 200px;
   height: 80px;
   background-color: #000;
-  /* margin: 0 0 0 0;        */
   right: 0;
   top: 0;
   display: flex;        /* 要素内のコンテンツを中央揃えするためにflexレイアウトを使用 */
