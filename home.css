@@ -305,10 +305,21 @@ td li {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
   background-color: #FFF;
-  gap: 664.5px;
 }
-#footer .logo, #footer .text {
-  margin-bottom: 35px;
+#footer .content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  gap: 30px 664.5px;
+}
+#copyright {
+  display: flex;
+  font-size: 10px;
+  margin-right: auto;
+  margin-bottom: 20px;
 }
