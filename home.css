@@ -184,7 +184,6 @@
 #about .maskgroup, #company .maskgroup {
   /* 元画像のサイズ指定 */
   width: 70vw;
-  max-width: 770px;
   height: 400px;
 
   /* （背景画像の場合） 元画像の指定 */
@@ -198,9 +197,6 @@
 
   /* マスクした範囲外の画像を非表示にする */
   overflow: hidden;
-
-  /* 余白 */
-  margin-bottom: 118px;
 }
 #about .section-group {
   width: 45%;
