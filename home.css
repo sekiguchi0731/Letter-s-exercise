@@ -303,18 +303,19 @@ td li {
   background-color: #FFF;
 }
 .inner-footer {
-  max-width: 1032px;
+  width: 1032px;
   padding: 0px 16px;
   margin: 0px auto;
 }
 #footer .content {
   width: 100%;
+  max-width: 1000px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   padding: 40px 0px;
-  /* gap: 30px 664.5px; */
+  gap: 30px min(665.4px, 59vw);
   margin-top: 0;
 }
 #copyright {
