@@ -255,7 +255,7 @@
   position: absolute;
   height: 616px;
   /* min関数は%は効かない */
-  width: min(567px, 55vw);
+  width: min(567px, 55%);
   background-color: #FFF;
   padding: 100px 82px 100px min(62px, 8vw);
   z-index: 1;
@@ -280,7 +280,7 @@ td li {
 }
 #company .maskgroup {
   position: absolute;
-  width: min(547px, 53vw);
+  width: min(547px, 53%);
   height: 400px;
   background-image: url(./img/company.jpg);
   background-position: center center;
